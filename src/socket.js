@@ -8,6 +8,7 @@ export const initSocket = async ()=>{
         transports: ['websocket'],
     } 
     //console.log(process);
-    const url = process.env.REACT_APP_BACKEND_URL;
+   // const url = process.env.REACT_APP_BACKEND_URL;
+    const url = "https://itsabhi-weather-app.herokuapp.com";
     return io(url,options);
 }
